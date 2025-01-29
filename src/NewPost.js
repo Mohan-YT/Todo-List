@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Post from './Post'
 import DataContaxt from './contaxt/DataContaxt'
 
 const NewPost = () => {
