@@ -1,38 +1,138 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-y: auto;
+}
+.header{
   text-align: center;
+  font-size: 1.5em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  background-color: powderblue;
+  width: 100%;
+  height: 5rem;
+  padding: 0 10px;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul li a{
+  margin: 0 10px;
+  text-decoration: none;
+}
+.nav ul li:hover,
+.nav ul li:focus,
+.nav ul li a:hover,
+.nav ul li a:focus {
+  background-color:black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.searchForm label{
+  position: absolute;
+  left: -9999px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchForm input {
+  height: 3rem;
+  width: 300px;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+.home .post{
+  margin: 20px;
+}
+.home a{
+  text-decoration: none;
+  color: black;
+}
+.newpost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 80vw;
+}
+.newpost label{
+  font-size: 1em;
+}
+.newpost #postTitle{
+  width: 80vw;
+  height: 60px;
+}
+.newpost #postBody{
+  width: 80vw;
+  height: 170px;
+  margin: 10px 0;
+}
+.newpost button{
+  width: 80vw;
+  height: 100px;
+  font-size: 2em;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.editpost .editForm{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.editpost h2{
+  font-size: 3rem;
+  text-align: center;
+}
+.editForm #editTitle{
+  width: 80vw;
+  height: 100px;
+}
+#editBody{
+  width: 80vw;
+  height: 200px;
+}
+.editForm button{
+  width: 80vw;
+  height: 80px;
+  font-size: 2rem;
+}
+.footer{
+  /* position:fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: azure;
+  width: 100%;
+  height: 70px;
+  margin: 10px 0 0;
+}
+.postPage .edit-btn{
+  background-color: blue;
+  color: white;
+  margin:10px 10px 10px 0;
+  padding: 1em 2.5em;
+}
+.postPage .delete-btn{
+  background-color: red;
+  color: white;
+  margin:10px 10px 10px 0;
+  padding: 1em 2.5em;
 }
