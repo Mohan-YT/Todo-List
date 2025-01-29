@@ -7,7 +7,6 @@ import PostPage from './PostPage';
 import About from './About';
 import Missing from './Missing';
 import Footer from './Footer';
-import Post from './Post';
 import './App.css';
 import { Route, Routes} from 'react-router-dom';
 import EditPosts from "./EditPosts"
